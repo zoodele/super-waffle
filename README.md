@@ -1,2 +1,2 @@
 # super-waffle
-this will either make my life marginally easier or I find entertaining
+you need to have chromedriver for this to work
