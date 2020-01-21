@@ -23,7 +23,7 @@ while driver.current_url == "https://bumble.com/app":
     nameAge = driver.find_element_by_class_name('encounters-story-profile__name')
     natxt = nameAge.text
     firstnam, sep, age = natxt.partition(', ')
-    dislike_butt = driver.find_elements(By.XPATH, '//*[@id="main"]/div/div[1]/main/div[2]/div/div/span/div[2]/div/div[2]/div/div[1]/div')
+    dislike_butt = driver.find_element(By.XPATH, '//*[@id="main"]/div/div[1]/main/div[2]/div/div/span/div[2]/div/div[2]/div/div[1]/div')
     like_butt = driver.find_element(By.XPATH, '//*[@id="main"]/div/div[1]/main/div[2]/div/div/span/div[2]/div/div[2]/div/div[3]/div')
     driver.implicitly_wait(4)
     if firstnam == "Kyle" or firstnam == "Kevin":
